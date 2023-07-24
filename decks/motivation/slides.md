@@ -1,4 +1,4 @@
-<!-- .slide: data-background-iframe="/dist/theme/assets/section-header-grey.png" -->
+<!-- .slide: data-background-iframe="../../dist/theme/assets/section-header-grey.png" -->
 # History
 
 -
