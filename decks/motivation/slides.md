@@ -1,15 +1,18 @@
+<!-- .slide: data-background-iframe="/dist/theme/assets/section-header-grey.png" -->
 # History
 
 -
 
-[![Photograph of statues of Newton and Leibniz](./images/newton_leibniz.jpg) <!-- .element: width="1000px" -->](https://commons.wikimedia.org/wiki/File:Statues_of_Isaac_Newton_and_Gottfried_Leibniz.jpg)
+[![Photograph of statues of Newton and Leibniz](./images/newton_leibniz.jpg) <!-- .element: width="800px" -->](https://commons.wikimedia.org/wiki/File:Statues_of_Isaac_Newton_and_Gottfried_Leibniz.jpg)
+
+[CC BY 3.0 Andrew Gray, Alexey Gomankov](https://commons.wikimedia.org/wiki/File:Statues_of_Isaac_Newton_and_Gottfried_Leibniz.jpg)
 
 Script:
 In this picture we see two brilliant scientists of the seventeenth century: Sir Isaac Newton and Gottfried Leibniz. Both of these people claimed to have invented calculus, and this was a major disagreement both between the two of them, and in the wider scientific community. Of course any dispute of this nature has many causes to it, but a significant one is that in the seventeenth century there was not a culture of publishing scientific findings to be accessible and understandable to the wider community. Instead, the motivation was to secure continued income for the scientist&mdash;by publishing work difficult to understand, to impress potential patrons with their intelligence, and so that patrons would need to hire the scientists to explain their findings in more detail.
 
 -
 
-![Photograph of the Royal Society's premises in Crane Court](./images/rs.jpg) <!-- .element: width="700px" -->
+[![Photograph of the Royal Society's premises in Crane Court](./images/rs.jpg) <!-- .element: width="700px" -->](https://commons.wikimedia.org/wiki/File:Royal_Society,_Crane_Court,_off_Fleet_Street,_London;_the_co_Wellcome_V0013121.jpg)
 
 Script:
 This culture was in the process of changing, however. The Royal Society was founded to increase the common body of scientific knowledge. To this end, it founded the world's first scientific journal, and with it the process of peer review.
@@ -59,7 +62,7 @@ While this was going on, the number of journal articles being published was grow
 
 -
 
-![Photograph of Paul Ginsparg](./images/ginsparg.jpg)
+![Photograph of Paul Ginsparg](./images/ginsparg.jpg) <!-- .element: width="500px" -->
 
 [Open Science Foundation, CC-BY 2.0](https://www.flickr.com/photos/97963478@N06/9135397744)
 
