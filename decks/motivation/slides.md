@@ -75,3 +75,40 @@ There has for a long time been a practice of sending a final draft, or "pre-prin
 
 Script:
 Now, while this has been going on, academic journals have also been moving online. The increasing number of publications means that it has become increasingly impractical for every article to appear in a bound, printed journal in a university library. However, as the number of papers has increased, so has the cost of subscribing to the journals to access them. Since funders do not have infinite money with which to pay journal subscriptions, universities have to be more selective about which journals they subscribe to.
+
+-
+
+<!-- .slide: data-background-iframe="../../dist/theme/assets/section-header-grey.png" -->
+# Definitions
+
+Script:
+Now we need to define a couple of terms.
+
+-
+
+## Reproducibility
+
+<span class="fragment fade-in" data-fragment-index="1">Same data</span>
+<span class="fragment fade-in" data-fragment-index="2">$+$ same analysis</span>
+<span class="fragment fade-in" data-fragment-index="3">$\rightarrow$ Same results</span>
+
+<span class="fragment fade-in" data-fragment-index="4">(from [The Turing Way project](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html))</span>
+
+Script:
+In this unit we will be talking about reproducibility; what does that mean? The definition we will be using is that if you take the same data, and apply the same analysis to it, you get the same results out at the end. (This is the definition used by the Turing Way project.) This may seem trivial&mdash;if you take the same data and analyse it in the same way but get a different result, then which result should be taken as the truth? However, there are many fields that have difficulties in this area&mdash;due to errors in the analysis process, key results cannot be reproduced by others in the field. It is also a good baseline to work from&mdash;if work is not reproducible, then it is unlikely to be replicable on new datasets, or generalisable to other contexts. Of course, if others are not able to access your code or data, then they can't reproduce your work.
+
+-
+
+## Open Science
+
+![Diagram showing icons representing papers, data, code, workflows, and experimental samples in a box at top, icons representing education, industry, government, people, and the world at the bottom, and a large arrow joining the two boxes](./images/openscience.svg)<!-- .element: width="1000px" -->
+
+Script:
+The second main term to define is Open Science. This is the movement that all research outputs&mdash;not only papers, but also data, code, workflows, experimental samples, and any other products of the research process&mdash;should be made accessible to everyone. Everyone in this context isn't just "everyone you've met at a conference", "everyone with access to high-performance computing resources", or even "all academics at universities who can afford journal subscriptions"&mdash;work should be open to industry, to government, and to the wider community, without financial or geographical restriction. Some definitions of open science also include making the process of doing the science itself more open, via processes such as citizen science and open peer review; we won't focus on these in this unit, but they are worth being aware of.
+
+-
+
+Reproducible <img src="./images/handshake.svg" alt="Handshake icon" style="vertical-align: -1.7em; margin-left: 15px; margin-right: 15px;"> Open
+
+Script:
+With these definitions we can start to see that reproducibility and open science really go hand in hand. It is near impossible for others to reproduce our work unless we are open about how it is done, and by making our processes open, we encourage others to reproduce and build on them. This is an area that is still developing, as people become increasingly aware of its importance; collaborators you work with might not always be aware of everything we will discuss, or may be taking advantage of new emerging techniques that we don't yet have videos about. It's also a very large space, so we can't prepare detailed training on every aspect; instead, we will pick out some highlights that we think are particularly relevant for lattice field theory practitioners.
