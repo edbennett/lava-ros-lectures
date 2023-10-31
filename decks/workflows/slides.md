@@ -74,7 +74,9 @@ Otherwise, if the data volumes are small and similar to the volume of code, and 
 
 -
 
-![Icon of a workflow on the front of a box with a sticker labeled "NEW!"](./images/package.svg) <!-- .element height="500px" -->
+![Icon of a workflow with sections highlighted in boxes, then a second similar icon with the boxed sections replace by single workflow elements](./images/package.svg) <!-- .element height="300px" style="margin: 50px" -->
+
+![Icon of a workflow component in a product box with a a "NEW!" sticker on it.](./images/publish-package.svg) <!-- .element height="200px" style="margin: 50px" class="fragment" -->
 
 Script:
-Finally, it's worth thinking as you work on your analyis whether any of the tools you're developing as part of it could be made more general and usable in other contexts. These can be split out into separate repositories, and packaged so that others can use them. This more modular design can make it easier for others to read the workflow for your publication, and will also make it easier for others to apply your techniques in their own work.
+Finally, it's worth thinking as you work on your analyis whether any of the tools you're developing as part of it could be made more general and usable in other contexts. These can be split out into separate packages or even repositories, simplifying your workflow so that more modular design can make it easier for you to work on it and re-use components in successive work, and easier for others to read the workflow for your publication. [click] Publishing these tools separately can also make it easier for others to apply your techniques in their own work.
