@@ -160,10 +160,32 @@ For storing large amounts of data&mdash;for example, Monte Carlo histories of ob
 
 -
 
-TODO IMAGE
+![Ways to initialise HDF5 usage in Python: import h5py; R: library(rhdf5); Fortran: call h5open_f(err), and C++: #include("hdf5.h")](./images/bindings.svg) <!-- .element height="200px" -->
+
+![Hierarchy of groups showing an ensembles group containing M1, M2, M3 groups,a each containing datasets labeled correlators and gradient_flow.](./images/hierarchy.svg) <!-- .element class="fragment margin50" height="200px" -->
+![Hierarchy of groups showing a collapsed ensembles group, and an expanded observables group containing mesons and plaquettes groups, each containing datasets labeled M1, M2, and M3.](./images/hierarchy-views.svg) <!-- .element class="fragment margin50" height="200px" -->
+![Numbers structured into a three-dimensional grid](./images/higher-dimensional.svg) <!-- .element class="fragment margin50" height="200px" -->
 
 Script:
-When using HDF5, you should make sure to use an appropriate binding for the language you're working with. For example, `h5py` in Python provides a convenient interface. The "H" in "HDF5" stands for "hierarchical"; HDF5 in fact implements its own file system internally, allowing you to store many datasets in a single file. For example, if you had data for multiple ensembles, or multiple different sets of data for one ensemble (like the plaquette, mesonic, and baryonic correlation functions), then you could combine these all in the same file, so others could download your full dataset in a single file. The HDF5 file system also allows the same dataset to appear in multiple locations without duplication of data. So you could present your data organised both by ensemble and by observable, without consuming additional storage. HDF5 is also good for data with more than two dimensions, which could be hard to represent as a CSV; HDF5 supports higher-dimensional arrays, and using `h5py` these can be constructed very easily from Numpy `ndarray`s of any dimensionality.
+When using HDF5,
+you should make sure to use an appropriate binding
+for the language you're working with.
+For example, `h5py` in Python provides a convenient interface.
+[click]
+The "H" in "HDF5" stands for "hierarchical";
+HDF5 in fact implements its own file system internally,
+allowing you to store many datasets in a single file.
+For example, if you had data for multiple ensembles,
+or multiple different sets of data for one ensemble
+(like the plaquette, mesonic, and baryonic correlation functions),
+then you could combine these all in the same file,
+so others could download your full dataset in a single file.
+[click]
+The HDF5 file system also allows
+the same dataset to appear in multiple locations without duplication of data.
+So you could present your data organised both by ensemble and by observable, without consuming additional storage.
+[click]
+HDF5 is also good for data with more than two dimensions, which could be hard to represent as a CSV; HDF5 supports higher-dimensional arrays, and using `h5py` these can be constructed very easily from Numpy `ndarray`s of any dimensionality.
 
 -
 
