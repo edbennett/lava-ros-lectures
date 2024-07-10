@@ -25,7 +25,13 @@ Most HPC systems impose a time limit on the length of jobs&mdash;see the Hardwar
 ![A line graph showing autocorrelation against separation $\tau$ for two series, one re-seeded every 50 trajectories, and one seeded one and run without re-seeding. The former shows a regular spike every 25 trajectories, as well as larger variance and distance from zero in general.](./images/seeding_autocorrelation.svg) <!-- .element height="500px" -->
 
 Script:
-In the worst case, the generator will be re-seeded with the same seed that was used at the start of the ensemble, which will introduce noticeable autocorrelations into the ensemble.
+In the worst case,
+the generator will be re-seeded with
+the same seed that was used at the start of the ensemble,
+which will introduce noticeable autocorrelations into the ensemble.
+You can see in the plot here that re-seeding the generator every 50 trajectories
+introduces very strong autocorrelations at every multiple of 50 trajectories,
+as well as making the magnitude of the autocorrelation larger at every value of $\tau$.
 
 -
 
