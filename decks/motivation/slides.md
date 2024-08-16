@@ -58,7 +58,14 @@ The development of computers in the twentieth century and their introduction int
 Script:
 However, the amount of code required to perform a typical analysis rapidly grew,
 and an academic paper is not a good place for long program listings.
-Unambiguously describing in words what a program does would require even more space than the program listing,
+What you see on the screen at the moment is
+the code needed just for the data analysis for a recent paper,
+excluding all the external libraries it imports,
+shrunk down to fit on the screen.
+If put into a typical LaTeX document format,
+these almost ten thousand lines would take up almost two hundred pages.
+Unambiguously describing in words what a program does
+would require even more space than the program listing,
 so that isn't an alternative.
 On top of this,
 many analyses relied on commercial or proprietary software
