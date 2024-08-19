@@ -1,7 +1,13 @@
 ![A screen full of numbers](./images/pi.svg)
 
 Script:
-In the first video of this section, we discussed some of the reasons for open science as a whole, as well as why reproducibility is both vital and intrinsically linked with open science. In this video we'll look more closely at why open data is important for lattice, before looking in more detail about some of the ways that you can support and benefit from it in your work.
+In the first video of this section,
+we discussed some of the reasons for open science as a whole,
+as well as why reproducibility is both
+vital and intrinsically linked with open science.
+In this video we'll look more closely at why open data is important for lattice,
+before looking in more detail at
+some of the ways that you can support and benefit from it in your work.
 
 ---
 
@@ -28,7 +34,21 @@ Firstly, we can share the input data&mdash;the physical and algorithmic paramete
 ![The diagram from the previous slide, but with the output plot highlighted](./images/compute-flow-outputs.svg)
 
 Script:
-Bearing this in mind, we can also share the data that we present in our papers. If others want to quote our results, reanalyse them, or comapre them with others', then having to try and read numbers off a graph makes this far more difficult (and imprecise) than it needs to be. Putting a data table into the paper can help with this, but becomes more impractical as the number of data points on plots grows, and raises the risk of copy and paste error. Better is to release the data in a machine-readable format&mdash;we'll come back to that in more detail later in the video. Sharing this will already increase the reach and impact of your work.
+Bearing this in mind,
+we can also share the data that we present in our papers.
+If others want to quote our results,
+reanalyse them,
+or compare them with others',
+then having to try and read numbers off a graph
+makes this far more difficult
+(and imprecise)
+than it needs to be.
+Putting a data table into the paper can help with this,
+but becomes more impractical as the number of data points on plots grows,
+and raises the risk of copy and paste error.
+Better is to release the data in a machine-readable format&mdash;we'll
+come back to that in more detail later in the video.
+Sharing this will already increase the reach and impact of your work.
 
 -
 
@@ -83,9 +103,9 @@ Data and metadata being findable isn't useful unless they can also be accessed. 
 
 ![Interoperable](./images/interoperable.svg) <!-- .element: width="200px" -->
 
-- I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
-- I2. (Meta)data use vocabularies that follow FAIR principles
-- I3. (Meta)data include qualified references to other (meta)data
+- I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation. <!-- .element class="fragment" -->
+- I2. (Meta)data use vocabularies that follow FAIR principles <!-- .element class="fragment" -->
+- I3. (Meta)data include qualified references to other (meta)data <!-- .element class="fragment" -->
 
 Script:
 Next, we would like data and metadata from different sources to be able to interoperate and be used together. Without this, it is much harder for anyone else to build tools that work with it. [click] A step towards this is to use a common language for representing data&mdash;where possible, rather than inventing a new file format or data layout, using a commonly-used one will make the data much easier to work with. [click] They should also make use of existing vocabularies; if two datasets from different groups describe a quantity as "beta", it should be clear whether they are referring to the same quantity or not. Of course, if the vocabularies used are not themselves available openly under FAIR terms, then this will not provide as significant a benefit as it otherwise could. [click] Finally, data and metadata should make reference to other data and metadata where appropriate. For example, data describing measurements should refer back to the ensembles that were used, which will make it clear whether two different measurements at the same physics parameters used the same or different underlying ensembles.
@@ -94,10 +114,10 @@ Next, we would like data and metadata from different sources to be able to inter
 
 ![Reusable](./images/reusable.svg) <!-- .element: width="200px" -->
 
-- R1. (Meta)data are richly described with a plurality of accurate and relevant attributes
-  - R1.1. (Meta)data are released with a clear and accessible data usage license
-  - R1.2. (Meta)data are associated with detailed provenance
-  - R1.3. (Meta)data meet domain-relevant community standards
+- R1. (Meta)data are richly described with a plurality of accurate and relevant attributes <!-- .element class="fragment" -->
+  - R1.1. (Meta)data are released with a clear and accessible data usage license <!-- .element class="fragment" -->
+  - R1.2. (Meta)data are associated with detailed provenance <!-- .element class="fragment" -->
+  - R1.3. (Meta)data meet domain-relevant community standards <!-- .element class="fragment" -->
 
 Script:
 Last we don't share data just to be admired, but to be reused. [click] There are a number of different requirements to enable data to be reused. We've already discussed having full metadata&mdash;we can't easily reuse gauge configurations without knowing the physics parameters they represent, for example. Other, more specific requirements include [click] making sure that you specify a license for data&mdash;we discuss copyright in more detail in the video on open-access publications, but the short story is that unless you give explicit consent, nobody is actually allowed to do anything with the data you share (since this would require making a copy of the data to their machine, which requires being given permission). Appropriate licenses for data are the same Creative Commons licenses that are commonly used for publications. [click] Another aspect not to forget is the provenance of your data&mdash;when were the data made, by whom, what inputs were used, what processes or tools were used. We'll talk more about how to achieve this when we discuss reproducibility. [click] The data and metadata you publish should also meet standards relevant to the community. For example, we'll shortly discuss the International Lattice Data Grid, which defines standards for sharing gauge field configurations and their associated metadata. If you ignore these standards and publish in your own ad-hoc way, it becomes much harder for others to reuse your data using standard tooling, and interoperate them with others' data.
