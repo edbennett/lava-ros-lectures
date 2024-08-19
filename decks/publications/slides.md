@@ -109,4 +109,28 @@ What about green open access? If you publish without gold open access, then the 
 * Refer to institutional and funder guidance
 
 Script:
-To sum up the key things you need to do when publishing your work. Next, if you're publishing work that is in the scope of SCOAP3, it makes life easier if you target a journal that it covers. For work not covered by SCOAP3, or where other factors mean you need to use a journal not covered by it (and you don't have funding to pay an Article Processing Charge), then add a rights retention statement to your manuscript and to the covering letter to the journal, so that you will retain the right to make the accepted manuscript available as open access. Once your manuscript is accepted, then make the accepted version available on the arXiv; if you published a preprint then do this as a replacement rather than a separate submission. (The main circumstance where you definitely shouldn't make a preprint available is if you are submitting to one of the few high-profile journals that does not allow it, like Nature.) If your article is gold open access, you can also make the final Version of Record available on the arXiv, as well as or instead of the accepted manuscript. Finally, do check your own institution's and your funders' policies around open access and rights retention&mdash;they may be more prescriptive than the general guidelines here.
+To sum up the key things you need to do when publishing your work.
+Firstly,
+if you're publishing work that is in the scope of SCOAP3,
+it makes life easier if you target a journal that it covers.
+For work not covered by SCOAP3,
+or where other factors mean you need to use a journal not covered by it
+(and you don't have funding to pay an Article Processing Charge),
+then add a rights retention statement to your manuscript and to the covering letter to the journal,
+so that you will retain
+the right to make the accepted manuscript available as open access.
+Once your manuscript is accepted,
+then make the accepted version available on the arXiv;
+if you published a preprint
+then do this as a replacement rather than a separate submission.
+(The main circumstance where you definitely shouldn't make a preprint available
+is if you are submitting to
+one of the few high-profile journals that does not allow it,
+like Nature.)
+If your article is gold open access,
+you can also make the final Version of Record available on the arXiv,
+as well as or instead of the accepted manuscript.
+Finally,
+do check your own institution's and your funders' policies
+around open access and rights retention&mdash;they
+may be more prescriptive than the general guidelines here.
