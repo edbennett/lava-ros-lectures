@@ -78,7 +78,16 @@ Each regional grid has three kinds of service: a metadata catalogue, a file cata
 ![Icon of an identity badge with the ILDG logo on](./images/ildg-identities.svg) <!-- .element height="400px" style="vertical-align: middle" -->
 
 Script:
-ILDG services provide a single identity, that you can use to query the metadata and file catalogues, download configurations, and upload ensembles. Some of these require your identit to be given specific access rights&mdash;for example, most storage elements need you to be specifically authorised to access them, and you need permission from a research group to upload ensembles under their namespace. However, the identity used is the same throughout.
+ILDG services provide a single identity,
+that you can use to
+query the metadata and file catalogues,
+download configurations,
+and upload ensembles.
+Some of these require your identity to be
+given specific access rights&mdash;for example,
+most storage elements need you to be specifically authorised to access them,
+and you need permission from a research group to upload ensembles under their namespace.
+However, the identity used is the same throughout.
 
 -
 

@@ -219,7 +219,12 @@ When it comes to sharing gauge configurations, then the standardised format to u
 ![Icon of a hand with a red "no" symbol over it](./images/no-touchy.svg) <!-- .element width="500px" -->
 
 Script:
-A key principle of working with data is that where possible you do not modify it (and in particular you do not modify raw data) in place. This also applies to sharing the data&mdash;ideally, you would like to share the data with as little manipulation done to it as possible, to reduce the possibility that problems could be introduced, or useful data removed.
+A key principle of working with data is that you do not modify it in place
+(and in particular you do not modify raw data in place).
+This also applies to sharing the data&mdash;ideally,
+you would like to share the data with as little manipulation done to it as possible,
+to reduce the possibility that problems could be introduced,
+or useful data removed.
 
 -
 
@@ -245,7 +250,33 @@ However, we still want to share data in open, documented, easily-readable format
 ![CERN logo](./images/cern.svg) <!-- .element height="100px" style="margin-left: 100px; margin-right: 100px; vertical-align: middle;" class="fragment" -->  ![DOI logo](./images/doi.svg) <!-- .element height="100px" class="fragment" style="margin-left: 100px; margin-right: 100px; vertical-align: middle;" -->  ![DOI logo](./images/50gb.svg) <!-- .element height="60px" class="fragment" style="margin-left: 100px; margin-right: 100px; vertical-align: middle;" --> 
 
 Script:
-Now that we know what data we want to share, we need to know where to share it. The key aspect here is to use a dedicated data repository. A general-purpose data repository that is free for all to use is Zenodo. Zenodo is hosted by CERN, and commits to making your data available as long as it is active, which is planned to be at least as long as CERN has a datacenter. This is a lot longer than services like GitHub or GitLab commit to hosting your data. Zenodo also provides you with a DOI for your data, meaning that you can link to it from a publication without worrying that the link will become invalid in the future&mdash;as long as Zenodo is still active, the link will resolve correctly. Including the DOI in your narrative publications as a citation helps readers to be able to find your data. There is a limit on the size of a Zenodo record&mdash;the standard limit is 50GB, although if you need to exceed this slightly you can speak with them to request an exception. If your data are much larger than this, then this is a sign you need a more specialised repository, for example the ILDG for gauge configurations. Don't try to split your data across a large number of Zenodo records to bypass the limit&mdash;this is likely to get you banned! This is also an area where you should check your institutional policy&mdash;you might find that your local institution runs its own data repository that it prefers you to use. (For example, the University of Bielefeld runs a service called Unibi where data can be deposited.)
+Now that we know what data we want to share, we need to know where to share it.
+The key aspect here is to use a dedicated data repository.
+A general-purpose data repository that is free for all to use is Zenodo.
+Zenodo is hosted by CERN,
+and commits to making your data available as long as it is active,
+which is planned to be at least as long as CERN has a datacenter.
+This is a lot longer than services like GitHub or GitLab commit to hosting your data.
+Zenodo also provides you with a DOI for your data,
+meaning that you can link to it from a publication without worrying
+that the link will become invalid in the future&mdash;as
+long as Zenodo is still active,
+the link will resolve correctly.
+Including the DOI in your narrative publications as a citation
+helps readers to be able to find your data.
+There is a limit on the size of a Zenodo record&mdash;the standard limit is 50GB,
+although if you need to exceed this slightly you can speak with them to request an exception.
+If your data are much larger than this,
+then this is a sign you need a more specialised repository,
+for example an ILDG Regional Grid for gauge configurations.
+Don't try to split your data across a large number of Zenodo records
+to bypass the limit&mdash;this is
+likely to get you banned!
+This is also an area where you should check your institutional policy&mdash;you
+might find that your local institution runs its own data repository 
+that it prefers you to use.
+(For example, the University of Bielefeld runs a service called Unibi
+where data can be deposited.)
 
 -
 
