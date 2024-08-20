@@ -76,7 +76,7 @@ Let's explore why.
 
 -
 
-![Three compact disks with "laser rot"](./images/laser_rot.png)
+![Three compact disks with "laser rot"](./images/laser_rot.png) <!-- .element height="600px" -->
 
 &mdash;[CC BY-SA Trio3D](https://commons.wikimedia.org/wiki/File:Three_stages_of_disc_rot_(PDO_UK).png)
 
