@@ -79,15 +79,21 @@ Another class of parallel bug that can create issues for reproducibility is the 
 
 -
 
-<div class="fragment">
+<div>
 
 $$(a + b) + c \ne a + (b + c)$$
 
 </div>
 
-![Seeds for every site on a 2-dimensional lattice](./images/lots_of_seeds.svg) <!-- .element height="300px" class="fragment" style="margin: 50px;""" --> ![Three workflows all outputting the same file](./images/race.svg) <!-- .element class="fragment" height="300px" style="margin: 50px;" -->
-
-
+![Seeds for every site on a 2-dimensional lattice](./images/lots_of_seeds.svg) <!-- .element height="300px" style="margin: 50px;""" -->
+![Three workflows all outputting the same file](./images/race.svg) <!-- .element height="300px" style="margin: 50px;" -->
 
 Script:
-To recap: [click] Be aware that parallelism (on CPU and GPU) and other speed-enhancing optimisations can break bitwise reproducibility for floating-point numbers. [click] Make sure to take good care of your random numbers when running in parallel. [click] And watch out for race conditions, particularly when outputting files from workflows.
+To recap:
+Be aware that parallelism
+(on CPU and GPU)
+and other speed-enhancing optimisations can
+break bitwise reproducibility for floating-point numbers.
+Make sure to take good care of your random numbers when running in parallel.
+And watch out for race conditions,
+particularly when outputting files from workflows.
