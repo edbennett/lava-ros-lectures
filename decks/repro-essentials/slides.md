@@ -1,14 +1,39 @@
 Same data $+$ same analysis $\rightarrow$ <span class="fragment highlight-red">Same</span> results
 
 Script:
-Work in lattice field theory has a number of phases, including configuration generation, measurement, and subsequent data analysis. Each of these has its own specific concerns when it comes to how to make the computation reproducible. In this video we will focus on the aspects of reproducibility that are common to all of these; aspects specific to a particular type of computation will be in a separate video. Let's start by recapping the definition of "reproducibility" that we are using. A piece of work is reprodcuible if given the same input data, and applying the same computational techniques to them, then we get the same results out at the end. But this alone isn't a precise definition&mdash;[click] in particular, we need to define what we mean when we say that results are "the same".
+Work in lattice field theory has a number of phases,
+including configuration generation,
+measurement,
+and subsequent data analysis.
+Each of these has its own specific concerns when it comes to
+how to make the computation reproducible.
+In this video we will focus on
+the aspects of reproducibility that are common to all of these;
+aspects specific to a particular type of computation will be in a separate video.
+Let's start by recapping the definition of "reproducibility" that we are using.
+A piece of work is reproducible if given the same input data,
+and applying the same computational techniques to them,
+then we get the same results out at the end.
+But this alone isn't a precise definition&mdash;[click]
+in particular,
+we need to define what we mean when we say that results are "the same".
 
 -
 
 ![Diagram showing four plots with horizontal error bars; the bars from the top plot are projected downward for comparison. The next two agree (and are marked with green check marks) and the last does not agree within errors (marked with a red cross)](./images/reproducibility-within-errors.svg) <!-- .element height="600px" style="margin:100px" --> ![Diagram showing four similar blocks of zeroes and ones. Two are identical to the top one and are marked with a green check mark; one is different by one digit (marked in red) and is marked with a red cross.](./images/bitwise-reproducibility.svg) <!-- .element height="600px" "style="margin:100px" -->
 
 Script:
-There are two main types of reproducbility in this context. One form is that you can obtain results that are compatible within errors with the original&mdash;if your methods don't allow that, then there is a significant concern over whether you are producing valid science. The second is that you can obtain every single number identically down to the last bit, known as "bitwise reproducibility". This is generally the ideal target, but we'll discuss some cases where that may be particularly hard, or lead to significant wasting of computational resources.
+There are two main types of reproducibility in this context.
+One form is that
+you can obtain results that are compatible within errors with the original&mdash;if
+your methods don't allow that,
+then there is a significant concern over whether you are producing valid science.
+The second is that you can obtain every single number identically
+down to the last bit,
+known as "bitwise reproducibility".
+This is generally the ideal target,
+but we'll discuss some cases where that may be particularly hard,
+or lead to significant wasting of computational resources.
 
 -
 
@@ -57,7 +82,33 @@ Unfortunately, even this level of specification doesn't necessarily allow others
 ![Illustration of a shipping container](./images/container.svg)
 
 Script:
-One way that has been developed to approach this problem is to release as much of the original environment as possible, using a technology called containerisation. By developing your software inside a container (or with containerisation in mind), you reduce the amount that your own system's idiosyncracies affect the software. Once your work is complete, you can then share the container, or the recipe used to build it, with others, who can run the exact environment that you ran&mdash;you solve the "works on my machine" problem by sharing your machine. This is not without downsides&mdash;container images can be very large, and you are forced to make a trade off between auditability of the code and environment (if you share the recipe) and the ability of anyone to re-run the software in the future (if you share the built container), since it's not guaranteed that your recipe will keep workin forever. An alternative to containerisation is careful specification of the exact runtime environment, to be included in your workflow or other releases. We won't go into the fine detail of how to specify your environment (with containers or otherwise) in this video, but more information is linked in the lesson notes.
+One way that has been developed to approach this problem is
+to release as much of the original environment as possible,
+using a technology called containerisation.
+By developing your software inside a container
+(or with containerisation in mind),
+you reduce the amount that your own system's idiosyncrasies affect the software.
+Once your work is complete,
+you can then share the container,
+or the recipe used to build it,
+with others,
+who can run the exact environment
+that you ran&mdash;you solve the
+"works on my machine"
+problem by sharing your machine.
+This is not without downsides&mdash;container images can be very large,
+and you are forced to make a trade off between auditability of the code and environment
+(if you share the recipe)
+and the ability of anyone to re-run the software in the future
+(if you share the built container),
+since it's not guaranteed that your recipe will keep working forever.
+An alternative to containerisation is careful specification of
+the exact runtime environment,
+to be included in your workflow or other releases.
+We won't go into the fine detail of how to specify your environment
+(with containers or otherwise)
+in this video,
+but more information is linked in the lesson notes.
 
 -
 
