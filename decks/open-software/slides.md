@@ -137,7 +137,29 @@ If you are able to fix an issue that exists on someone else's repository, or imp
 <span class="fragment" style="font-size: 72px;"><a href="https://choosealicense.com">choosealicense.com</a></span>
 
 Script:
-As we discussed in the sections on open publication and open data, unless you give permission using a license, nobody has permission to make use of any software you share. Because software has some very specific considerations that aren't applicable to most creative work, it's not recommended for software to use the same Creative Commons licenses that we recommend for software and data. (But the same advice to not try and write your license applies here too.) Instead, there are specific pre-written software licenses that you can choose from. All require credit be given to the original authors. The main choice for you is whether you want those making use of your code to be required to share their modifications, or if they should be able to build it into other products that they can then keep proprietary. [click] To get help with a license, you can visit the website ChooseALicense.com, which is run by GitHub. Once you've chosen one, it is conventional to put a copy in the root of your repository in a file called `LICENSE`. The license may also give instructions around putting a message in each source file also.
+As we discussed in the sections on open publication and open data,
+unless you give permission using a license,
+nobody has permission to make use of any software you share.
+Because software has some very specific considerations
+that aren't applicable to most creative work,
+it's not recommended for software to use the same Creative Commons licenses
+that we recommend for publications and data.
+(But the same advice to not try and write your license applies here too.)
+Instead,
+there are specific pre-written software licenses that you can choose from.
+All require credit be given to the original authors.
+The main choice for you is
+whether you want those making use of your code to be required to share their modifications,
+or if they should be able to build it into other products
+that they can then keep proprietary.
+[click]
+To get help with a license,
+you can visit the website ChooseALicense.com,
+which is run by GitHub.
+Once you've chosen one,
+it is conventional to put a copy in the root of your repository
+in a file called `LICENSE`.
+The license may also give instructions around putting a message in each source file.
 
 -
 
