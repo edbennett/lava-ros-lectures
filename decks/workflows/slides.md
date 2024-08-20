@@ -8,7 +8,18 @@ We've discussed in other videos the importance of sharing data openly. But to fu
 ![Findable](./images/findable.svg) <!-- .element height="150px" style="margin: 50px" --> ![Accessible](./images/accessible.svg) <!-- .element height="150px" style="margin: 50px" --> ![Interoperable](./images/interoperable.svg) <!-- .element height="150px" style="margin: 50px" --> ![Reusable](./images/reusable.svg) <!-- .element height="150px" style="margin: 50px" --> ![Hosting](./images/home.svg) <!-- .element height="150px" style="margin: 50px" -->
 
 Script:
-Many of the considerations for sharing workflows are the same as for sharing data. We want out workflows to be findable, accessible, interoperatble, and reusable, and we need to find an appropriate place to host the workflow. In this video we'll focus on the aspects that are specific to workflows&mdash;if you haven't already watched the video on data, you might want to go and watch that to understand the common aspects before continuing this one.
+Many of the considerations for sharing workflows are the same as for sharing data.
+We want our workflows to be
+findable,
+accessible,
+interoperatable,
+and reusable,
+and we need to find an appropriate place to host the workflow.
+In this video we'll focus on the aspects that are
+specific to workflows&mdash;if
+you haven't already watched the video on data,
+you might want to go and watch that
+to understand the common aspects before continuing this one.
 
 -
 
@@ -27,7 +38,7 @@ The first thing to note is that your workflow is a piece of software. Even if it
 
 -
 
-<table><tr><th style="text-align: center; padding-bottom: 80px;"><img src="./images/github.svg" width="500px" style="transform: scale(5);" alt="GitHub logo"></td><th style="text-align: center;"><img src="./images/gitlab.svg" width="500px" style="transform: scale(5);" alt="GitLab logo"></td><th style="text-align: center;"><img src="./images/zenodo.svg" width="500px" style="transform:scale(2.5);" alt="Zenodo logo" class="fragment" data-fragment-index="2"></td></tr>
+<table><tr><th style="text-align: center; padding-bottom: 80px;"><img src="./images/github.svg" width="500px" alt="GitHub logo"></td><th style="text-align: center;"><img src="./images/gitlab.svg" width="500px" alt="GitLab logo"></td><th style="text-align: center;"><img src="./images/zenodo.svg" width="500px" alt="Zenodo logo" class="fragment" data-fragment-index="2"></td></tr>
 <tr style="font-size: 72px; text-align: center;"><td style="text-align: center;">❌</td><td style="text-align: center;">❌</td><td style="text-align: center;" class="fragment" data-fragment-index="2">✅</td></tr></table>
 
 Script:
@@ -80,3 +91,24 @@ Otherwise, if the data volumes are small and similar to the volume of code, and 
 
 Script:
 Finally, it's worth thinking as you work on your analyis whether any of the tools you're developing as part of it could be made more general and usable in other contexts. These can be split out into separate packages or even repositories, simplifying your workflow so that more modular design can make it easier for you to work on it and re-use components in successive work, and easier for others to read the workflow for your publication. [click] Publishing these tools separately can also make it easier for others to apply your techniques in their own work.
+
+-
+
+![GNU logo](./images/gnu.svg) <!-- .element height="150px" style="margin: 50px;" -->
+![Zenodo logo](./images/zenodo.svg) <!-- .element height="150px" style="margin: 50px;" -->
+![Icons for data and workflow enclosed together by one rounded rectangle](./images/data-workflow-separate.svg) <!-- .element height="200px" style="margin: 50px;" -->
+![Icon of a workflow component in a product box with a a "NEW!" sticker on it.](./images/publish-package.svg) <!-- .element height="150px" style="margin: 50px" -->
+
+Script:
+To recap:
+Do choose and specify a software license for your workflows.
+Make share them using a repository that commits to long-term availability
+and grants a persistent identifier,
+like Zenodo.
+Think about whether it makes sense to separate your data and code
+into two releases,
+or combine them into one.
+And also consider whether parts of your workflow are generalisable;
+if you have the resources to do this,
+making these available as separate tools
+may help others and your future self use your techniques more easily.
