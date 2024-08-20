@@ -18,7 +18,26 @@ Dynamical field configuration generation is frequently the most expensive part o
 
 
 Script:
-Most HPC systems impose a time limit on the length of jobs&mdash;see the Hardware and Software section to understand why this has to be the case. The majority of non-trivial ensembles can't be fully generated within the time limit of a single job, and so we need to checkpoint. [click click] Frequently we will already output the field configuration after one or more Monte Carlo updates to be able to compute observables; this can also be used as a checkpoint from which to resume generation of configurations later. However, this isn't the only state in the software&mdash;[click] the random number generator also carries a state, that we set up with a seed at the beginning of the program. We need to persist this state along with the field configuration; if this is not done, then in the best case the next job will seed the generator in such a way that we can't reproduce it.
+Most HPC systems impose a time limit on the length of jobs&mdash;see
+the Hardware and Software section
+to understand why this has to be the case.
+The majority of non-trivial ensembles
+can't be fully generated within the time limit of a single job,
+and so we need to checkpoint.
+[click click]
+Frequently we will already output the field configuration 
+after one or more Monte Carlo updates
+to be able to compute observables;
+this can also be used as a checkpoint from which
+to resume generation of configurations later.
+However,
+this isn't the only state in the software&mdash;[click]
+the random number generator also carries a state,
+that we set up with a seed at the beginning of the program.
+We need to persist this state along with the field configuration;
+if this is not done,
+then in the best case the next job will seed the generator
+in such a way that we can't reproduce it.
 
 -
 
@@ -46,7 +65,14 @@ but will impact all algorithms that rely on random numbers.
 </div>
 
 Script:
-So the field configurations saved in order to compute observables do not on their own make a complete checkpoint. But does a complete checkpoint provide all the necessary information to usefully retain the configurations long term? [click] No, the raw binary data of the field configuration cannot by itself provide enough information for others to be able to make use of it. Let's explore why.
+[click] So the field configurations saved in order to compute observables
+do not on their own make a complete checkpoint.
+But does a complete checkpoint provide all the necessary information to usefully retain the configurations long term?
+[click]
+No,
+the raw binary data of the field configuration cannot by itself provide
+enough information for others to be able to make use of it.
+Let's explore why.
 
 -
 
@@ -55,7 +81,22 @@ So the field configurations saved in order to compute observables do not on thei
 &mdash;[CC BY-SA Trio3D](https://commons.wikimedia.org/wiki/File:Three_stages_of_disc_rot_(PDO_UK).png)
 
 Script:
-Computer hard drives, SDs, backup tapes, and cloud storage will generally not hold a perfect record for eternity of every single bit of data you store. Over time, degradation of the material, manufacturing defects becoming apparent, and environmental factors (up to and including passing cosmic rays flipping bits) can all cause data to be modified on disk. Because of this, configurations we store should always include a way of verifying that the data we read are the same as those that were written in the first place.
+Computer hard drives,
+SSDs,
+backup tapes,
+and cloud storage
+will generally not hold a perfect record for eternity of
+every single bit of data you store.
+Over time,
+degradation of the material,
+manufacturing defects becoming apparent,
+and environmental factors
+(up to and including passing cosmic rays flipping bits)
+can all cause data to be modified on disk.
+Because of this,
+configurations we store should always include a way of verifying that
+the data we read are the same as
+those that were written in the first place.
 
 -
 
@@ -78,7 +119,7 @@ A checksum is an algorithm that takes every byte of information in a data struct
 ![Illustrations of the average plaquette and the link trace](./images/physical_checks.svg)
 
 Script:
-Other observables frequently used to check consistency include the average (spatial, tempoeral, or global) plaquette, and the trace of all gauge links. While these are less likely than a checksum to identify an individual bit flip, their greater physical interpretability means they can help identify whether the structure of a configuration has been read correctly; since the checksum only looks at the raw binary data, it cannot verify this.
+Other observables frequently used to check consistency include the average (spatial, temporal, or global) plaquette, and the trace of all gauge links. While these are less likely than a checksum to identify an individual bit flip, their greater physical interpretability means they can help identify whether the structure of a configuration has been read correctly; since the checksum only looks at the raw binary data, it cannot verify this.
 
 -
 
@@ -123,7 +164,7 @@ As we've discussed previously, in addition to metadata about what physics is rep
 
 -
 
-![Metadata and configuration paperclipped together](./images/paperclip.svg) <!-- .element height="350px" -->
+![Metadata and configuration paper-clipped together](./images/paperclip.svg) <!-- .element height="350px" -->
 
 ![Metadata and configuration files separately with a common identifier](./images/separate-metadata.svg) <!-- .element class="fragment margin50" height="150px" -->
 ![Metadata and configuration data in a single file](./images/combine-metadata.svg) <!-- .element class="fragment margin50" height="150px" -->
@@ -153,7 +194,7 @@ A way to avoid needing to write a lot of documentation is to use a format that i
 
 ![Random number generator file](./images/rng_file.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
 ![CRC checksum](./images/crc.svg) <!-- .element height="70px" class="fragment margin50 vcentre" -->
-![Metadata and configuration data paperclipped together](./images/paperclip.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
+![Metadata and configuration data paper-clipped together](./images/paperclip.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
 ![ILDG Configuration](./images/ildg-configuration.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
 
 Script:
