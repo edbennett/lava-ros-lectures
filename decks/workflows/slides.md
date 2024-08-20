@@ -38,8 +38,24 @@ The first thing to note is that your workflow is a piece of software. Even if it
 
 -
 
-<table><tr><th style="text-align: center; padding-bottom: 80px;"><img src="./images/github.svg" width="500px" alt="GitHub logo"></td><th style="text-align: center;"><img src="./images/gitlab.svg" width="500px" alt="GitLab logo"></td><th style="text-align: center;"><img src="./images/zenodo.svg" width="500px" alt="Zenodo logo" class="fragment" data-fragment-index="2"></td></tr>
-<tr style="font-size: 72px; text-align: center;"><td style="text-align: center;">❌</td><td style="text-align: center;">❌</td><td style="text-align: center;" class="fragment" data-fragment-index="2">✅</td></tr></table>
+<table>
+<tr>
+<th style="text-align: center; padding-bottom: 80px;">
+<img src="./images/github.svg" height="120px" alt="GitHub logo">
+</th>
+<th style="text-align: center;">
+<img src="./images/gitlab.svg" height="120px" alt="GitLab logo">
+</th>
+<th style="text-align: center;">
+<img src="./images/zenodo.svg" height="80px" alt="Zenodo logo" class="fragment" data-fragment-index="2">
+</th>
+</tr>
+<tr style="font-size: 72px; text-align: center;">
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;" class="fragment" data-fragment-index="2">✅</td>
+</tr>
+</table>
 
 Script:
 If you've watched the video on Open Software Development, or are familiar with it from other routes, you might think that a source code repository host like GitHub or GitLab would be a good place to share your workflows. Unfortunately, while they are excellent tools to use while actively developing your workflows, they have some specific problems that make them unsuitable for _publishing_ them. A publishing platform should make it possible to find resources months, years, or decades after the reference to them was written&mdash;if a paper written in 1980 refers to one written in 1950, provided your library has a copy or a relevant subscription, you can go to the journal and find the cited article, and if an article written in 2005 cites another paper by its DOI, then that link should still work today. Platforms like GitHub, however, make no guarantee that links will remain available&mdash;if you change your username, or rename the repository, then all existing links to it can break. Anyone reading your paper and wanting to follow the link to your workflow will instead have a dead link. Worse, there is no guarantee that repositories will remain available at all in the long term; in 2022 GitLab announced that repositories not under active development would be removed from their service. While they did later reverse that decision, it's clear that a service dedicated to retaining data is needed. [click] You can publish your workflows (and other software) in most of the same places that you can publish data. As we discussed in the open data video, Zenodo is an example of such a service, and has a specific integration to make it easier to generate a dataset from a specific GitHub commit. (There are also services more specifically tailored to workflows, but currently these are specific to disciplines that do not overlap with lattice.)
