@@ -32,6 +32,8 @@ which will introduce noticeable autocorrelations into the ensemble.
 You can see in the plot here that re-seeding the generator every 50 trajectories
 introduces very strong autocorrelations at every multiple of 50 trajectories,
 as well as making the magnitude of the autocorrelation larger at every value of $\tau$.
+This effect is particularly bad for the RHMC and similar algorithms,
+but will impact all algorithms that rely on random numbers.
 
 -
 
