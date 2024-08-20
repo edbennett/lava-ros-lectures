@@ -112,7 +112,8 @@ Finally, it's worth thinking as you work on your analyis whether any of the tool
 
 ![GNU logo](./images/gnu.svg) <!-- .element height="150px" style="margin: 50px;" -->
 ![Zenodo logo](./images/zenodo.svg) <!-- .element height="150px" style="margin: 50px;" -->
-![Icons for data and workflow enclosed together by one rounded rectangle](./images/data-workflow-separate.svg) <!-- .element height="200px" style="margin: 50px;" -->
+
+![Icons for data and workflow enclosed together by one rounded rectangle](./images/data-workflow-separate.svg) <!-- .element height="150px" style="margin: 50px;" -->
 ![Icon of a workflow component in a product box with a a "NEW!" sticker on it.](./images/publish-package.svg) <!-- .element height="150px" style="margin: 50px" -->
 
 Script:
