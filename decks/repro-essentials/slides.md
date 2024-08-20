@@ -58,7 +58,25 @@ The first step towards helping others to be able to understand and reproduce you
 ![The same illustration as the previous slide, but with the text of Ref. [42] shown to be "A. N. Author, AwesomeLat Contributors. AwesomeLat commit f191eaf, available https://github.com/-an--author-/AwesomeLat. DOI: 10.5281/zenodo.1234567."](./images/name-software-with-reference.svg)
 
 Script:
-While it's a vital first step, naming the software isn't usually sufficient to guarantee reproducibility. The same software may change its behaviour between versions, either removing bugs or changing default algorithms and parameters. We need to specify the version of the software that we have used to generate a particular result. For prepackaged software, a version number might be sufficient here. For actively-developed software held in version control (which will include most lattice codes), then the commit identifier from the version control system is a better choice. If someone else needs to reproduce your result, they should be able to clone the repository and check out the correct commit. If you or the software authors can create a Zenodo release for the version you're using, then this is even better, since GitHub and similar platforms don't guarantee to keep links working for the long term. To find out more about Zenodo, take a look at the video on Open Software Development.
+While it's a vital first step,
+naming the software isn't usually sufficient to guarantee reproducibility.
+The same software may change its behaviour between versions,
+either removing bugs or changing default algorithms and parameters.
+We need to specify the version of the software that we have used
+to generate a particular result.
+For prepackaged software,
+a version number might be sufficient here.
+For actively-developed software held in version control (which will include most lattice codes),
+then the commit identifier from the version control system is a better choice.
+If someone else needs to reproduce your result,
+they should be able to clone the repository and check out the correct commit.
+If you or the software authors can create
+a Zenodo release for the version you're using,
+then this is even better,
+since GitHub and similar platforms don't guarantee
+to keep links working for the long term.
+To find out more about Zenodo,
+take a look at the videos on Open Data and Open Workflows.
 
 -
 
