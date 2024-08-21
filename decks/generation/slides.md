@@ -191,10 +191,10 @@ A way to avoid needing to write a lot of documentation is to use a format that i
 
 -
 
-![Random number generator file](./images/rng_file.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
-![CRC checksum](./images/crc.svg) <!-- .element height="70px" class="fragment margin50 vcentre" -->
-![Metadata and configuration data paper-clipped together](./images/paperclip.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
-![ILDG Configuration](./images/ildg-configuration.svg) <!-- .element height="200px" class="fragment margin50 vcentre" -->
+![Random number generator file](./images/rng_file.svg) <!-- .element height="200px" class="margin50 vcentre" -->
+![CRC checksum](./images/crc.svg) <!-- .element height="70px" class="margin50 vcentre" -->
+![Metadata and configuration data paper-clipped together](./images/paperclip.svg) <!-- .element height="200px" class="margin50 vcentre" -->
+![ILDG Configuration](./images/ildg-configuration.svg) <!-- .element height="200px" class="margin50 vcentre" -->
 
 Script:
 Let's recap. To generate your field configurations reproducibly, you should [click] make sure to persist your random number generator state along with your field configurations. [click] Store checksums and simple physical observables along with the configuration to verify that data have not become corrupted. [click] Include metadata and provenance information with your configuration, either within the binary file or in a separate file connected to the binary file via a unique identifier. [click] And use a well-defined and documented file format for both your binary configuration data and the associated metadata; the ILDG format provides this with the minimum amount of work needed from you.
