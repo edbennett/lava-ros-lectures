@@ -72,22 +72,60 @@ When you're developing a piece of software from scratch, you might start off by 
 ✅
 
 Script:
-Having detailed logs is good, but in addition, data should be output in a data format. Good formats for this include JSON, XML, and HDF5&mdash;these offer more flexibility and structure than a flat format like CSV gives, letting you include rich metadata more easily. HDF5 in particular is better for larger volumes of data, as it is more storage-efficient, and can be read and written in parallel if necessary. All of these formats have good libraries available to read and write them from most common programming languages, which you should make use of&mdash;you should never need to write code to parse the syntax or write it by hand.
+Having detailed logs is good,
+but in addition,
+data should be output in a data format.
+Good formats for this include
+JSON,
+XML,
+and HDF5&mdash;these
+offer more flexibility and structure than a flat format like CSV gives,
+letting you include rich metadata more easily.
+HDF5 in particular is better for larger volumes of data,
+as it is more storage-efficient,
+and can be read and written in parallel if necessary.
+All of these formats have good libraries available
+to read and write them from most common programming languages,
+which you should make use of&mdash;you
+should never need to write code to parse or generate the syntax by hand.
 
 -
 
 ![Question mark over a metadata standard certificate](./images/no-standards.svg)
 
 Script:
-In general, it's good to stick to a standardised format and schema for your data and metadata&mdash;this makes it easier for your work to interoperate with others', since there's no need need to work out how to match differently-labeled fields, different conventions on normalisation, and so on. It also makes it easier to not forget to include particular pieces of metadata. Unfortunately, for lattice measurements currently there is no commonly-accepted schema. This means that we all have to make a best effort to include as much metadata as is necessary, and to document this clearly and thoroughly enough that others are able to make use of our data.
+In general,
+it's good to stick to a standardised format and schema
+for your data and metadata&mdash;this
+makes it easier for your work to interoperate with others',
+since there's no need to work out how to match differently-labeled fields,
+different conventions on normalisation,
+and so on.
+It also makes it easier to not forget to include particular pieces of metadata.
+Unfortunately,
+for lattice measurements currently there is no commonly-accepted schema.
+This means that we all have to make a best effort to include
+as much metadata as is necessary,
+and to document this clearly and thoroughly enough that
+others are able to make use of our data.
 
 -
 
-![Metadata mapped from input to output file](./images/preserve-metadata.svg) <!-- .element class="fragment margin50 margin100side" data-fragment-index="1" height="150px" -->
-![XML/JSON/HDF5 file](./images/datafile.svg) <!-- .element class="fragment margin50 margin100side" data-fragment-index="3" height="150px" -->
+![Metadata mapped from input to output file](./images/preserve-metadata.svg) <!-- .element class="margin50 margin100side" data-fragment-index="1" height="150px" -->
+![XML/JSON/HDF5 file](./images/datafile.svg) <!-- .element class="margin50 margin100side" data-fragment-index="3" height="150px" -->
 
-![Metadata mapped from black box program to output file](./images/add-metadata.svg) <!-- .element class="fragment margin50 margin100side" data-fragment-index="2" height="150px" -->
-![Standardised data/metadata schema?](./images/no-standards-compact.svg) <!-- .element class="fragment margin50 margin100side" data-fragment-index="4" height="150px" -->
+![Metadata mapped from black box program to output file](./images/add-metadata.svg) <!-- .element class="margin50 margin100side" data-fragment-index="2" height="150px" -->
+![Standardised data/metadata schema?](./images/no-standards-compact.svg) <!-- .element class="margin50 margin100side" data-fragment-index="4" height="150px" -->
 
 Script:
-To sum up: [click] do preserve in your measurement output the metadata and provenance information from any files you read in. [click] Also, add any necessary metadata and provenance information saying what was done and how; this can include the algorithms used and parameters to them, as well as information like what machine was used and when. [click] Do use data formats like JSON, XML, or HDF5 for outputting data, and make sure that you use appropriate libraries for constructing and parsing these. [click] And carefully document your data and metadata conventions, and keep an eye out for the development of schemas that will standardise this process.
+To sum up:
+do preserve in your measurement output
+the metadata and provenance information from any files you read in.
+Also,
+add any necessary metadata and provenance information saying what was done and how;
+this can include the algorithms used and parameters to them,
+as well as information like what machine was used and when.
+Do use data formats like JSON, XML, or HDF5 for outputting data,
+and make sure that you use appropriate libraries for constructing and parsing these.
+And carefully document your data and metadata conventions,
+and keep an eye out for the development of schemas that will standardise this process.
