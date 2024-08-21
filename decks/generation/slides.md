@@ -166,9 +166,8 @@ As we've discussed previously, in addition to metadata about what physics is rep
 
 ![Metadata and configuration paper-clipped together](./images/paperclip.svg) <!-- .element height="350px" -->
 
-![Metadata and configuration files separately with a common identifier](./images/separate-metadata.svg) <!-- .element class="fragment margin50" height="150px" -->
 ![Metadata and configuration data in a single file](./images/combine-metadata.svg) <!-- .element class="fragment margin50" height="150px" -->
-
+![Metadata and configuration files separately with a common identifier](./images/separate-metadata.svg) <!-- .element class="fragment margin50" height="150px" -->
 
 Script:
 It's important to use a format that keeps all of the metadata in a way that is easy for code to work with, and that can't easily be disconnected from the configuration. For instance, the filename is not a good place to keep metadata&mdash;it isn't machine readable, and files can get renamed accidentally and the original metadata lost. Metadata can be embedded within the binary configuration file, or stored in a second file linked back to the binary configuration somehow (for example, referring to an identifier within the binary).
