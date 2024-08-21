@@ -16,13 +16,17 @@ that the biggest enabler of reproducibility of our results
 is to automate as many steps as possible.
 The same is true of our data presentation:
 if each time we update our underlying data we need to
+[click]
 manually tweak a dozen plots,
+[click]
 and transcribe a hundred numbers into tables,
 then we are guaranteed to introduce mistakes,
 either by doing a step incorrectly,
 or by forgetting to update one or more elements.
 We'd instead like to have a solution
+[click]
 where we can run a single command,
+[click]
 and have up to date versions of
 all results that are included in our publication.
 
@@ -425,26 +429,21 @@ then using other tools can make life easier.
 
 -
 
-![Workflow manager](./images/workflow-managers.svg) <!-- .element height="200px" class="fragment margin50" -->
-![Plot](./images/plot.svg) <!-- .element height="200px" class="fragment margin50" -->
-![Table](./images/table.svg) <!-- .element height="200px" class="fragment margin50" -->
+![Workflow manager](./images/workflow-managers.svg) <!-- .element height="200px" class="margin50" -->
+![Plot](./images/plot.svg) <!-- .element height="200px" class="margin50" -->
+![Table](./images/table.svg) <!-- .element height="200px" class="margin50" -->
 
-![Definitions in a file](./images/define-file.svg) <!-- .element height="200px" class="fragment margin50" -->
-![Assets directory](./images/assets-directory.svg) <!-- .element height="200px" class="fragment margin50" -->
+![Definitions in a file](./images/define-file.svg) <!-- .element height="200px" class="margin50" -->
+![Assets directory](./images/assets-directory.svg) <!-- .element height="200px" class="margin50" -->
 
 Script:
 To recap:
-[click]
 we really want to use a workflow manager to co-ordinate generating our outputs.
-[click]
 We want to automatically generate plots of our data,
 and format them consistently using style files.
-[click]
 We want to generate the LaTeX source of our tables automatically.
-[click]
 And we want to define LaTeX macros for any numbers
 we will quote in the text of our papers.
-[click]
 All of these
 we want to put into a single `assets` directory,
 that we can copy into our LaTeX project once our workflow generates it,
