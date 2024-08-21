@@ -179,7 +179,7 @@ One option is to adopt a language-specific workflow manager,
 that we can work into our existing code.
 For example,
 in Python,
-[Joblib](https://joblib.readthedocs.io)
+[JobLib](https://joblib.readthedocs.io)
 and [AiiDA](https://www.aiida.net)
 are examples of these.
 [click]
@@ -194,7 +194,7 @@ Script:
 We discussed in the video on measurement code the desire to use
 standardised formats for structured data
 rather than log files.
-If all of the data we are analysing is using a standard format,
+If all of the data we are analysing are using a standard format,
 then we should be able to load them into our analysis tool
 with a single function call to a common library.
 But since we can't always write the exact measurement code we want,
@@ -209,12 +209,14 @@ that others will be able to understand?
 
 Script:
 We have a couple of choices.
+[click]
 One is to write a function that parses the log file,
 and returns the data structure that the analysis code expects.
 This minimises the number of separate tools you need to co-ordinate,
 and the number of intermediary files,
 but can introduce some complexity to your analysis,
 as now you need to keep track of what file format you're working with.
+[click]
 Another option is to write a standalone tool
 that transforms from the log format
 into a more standard format that your code can read directly.
@@ -244,9 +246,9 @@ but what about the integrity?
 
 <div class="r-stack">
 
-![Three shaded regions, labelled `data/`, `processed_data/`, and `output/`. The first is labeled with a locked padlock, and contains a stack of data files. The second is labeled with an open padlock, and contains a stack of columned data files. The third is labeled with an open padlock, and contains three plots and a table.](./images/data-plus-output.svg) <!-- .element height="500px" class="fragment current-visible" -->
+![Three shaded regions, labelled `data/`, `processed_data/`, and `output/`. The first is labelled with a locked padlock, and contains a stack of data files. The second is labelled with an open padlock, and contains a stack of columned data files. The third is labelled with an open padlock, and contains three plots and a table.](./images/data-plus-output.svg) <!-- .element height="500px" class="fragment current-visible" -->
 
-![The previous image, but with the `processsed_data/` and `output`/ regions removed, leaving only `data/`.](./images/data-no-output.svg) <!-- .element height="500px" class="fragment current-visible" -->
+![The previous image, but with the `processed_data/` and `output`/ regions removed, leaving only `data/`.](./images/data-no-output.svg) <!-- .element height="500px" class="fragment current-visible" -->
 
 ![The same as the first diagram, with the missing sections restored.](./images/data-plus-output.svg) <!-- .element height="500px" class="fragment current-visible" -->
 
@@ -275,35 +277,30 @@ when you run the workflow.
 
 -
 
-![Sharing](./images/sharing.svg) <!-- .element height="200px" class="margin50 fragment" -->
-![No manual intervention](./images/no-manual.svg) <!-- .element height="200px" class="margin50 fragment" -->
-![Workflow managers](./images/workflow-managers.svg) <!-- .element height="200px" class="margin50 fragment" -->
+![Sharing](./images/sharing.svg) <!-- .element height="200px" class="margin50" -->
+![No manual intervention](./images/no-manual.svg) <!-- .element height="200px" class="margin50" -->
+![Workflow managers](./images/workflow-managers.svg) <!-- .element height="200px" class="margin50" -->
 
-![Provenance](./images/provenance.svg) <!-- .element height="200px" class="margin50 fragment" -->
-![Data integrity](./images/data-integrity.svg) <!-- .element height="200px" class="margin50 fragment" -->
+![Provenance](./images/provenance.svg) <!-- .element height="200px" class="margin50" -->
+![Data integrity](./images/data-integrity.svg) <!-- .element height="200px" class="margin50" -->
 
 Script:
 Let's recap now.
-[click]
 We want to share our workflows publicly,
 so that we can benefit from more opportunities
 to identify and remove potential issues,
 and so that others can better understand what we've done,
 and learn from where we've done it well.
-[click]
-We want to remove as many manual steps from our worfklows as possible,
+We want to remove as many manual steps from our workflows as possible,
 so that our workflow operates on clearly-defined input data
 to always give the same output data.
-[click]
 We want to use a workflow manager to do this,
 so that we can more easily organise dependencies
 between steps of a complex set of tasks,
 automatically run multiple steps in parallel,
 and automatically re-run only what is needed when data change.
-[click]
 We want to track the provenance of data where possible,
 so it's clear what input data a given output depended on.
-[click]
 And we want to take steps to ensure our data integrity,
 including keeping input data separately from modified data,
 so that the input data are never accidentally modified.
