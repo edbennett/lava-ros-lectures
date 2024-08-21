@@ -257,7 +257,7 @@ but what about the integrity?
 Script:
 A key principle to try and follow when working with data
 is to keep the raw data raw,
-and not modify it.
+and not modify them.
 Ideally,
 this means keeping the raw input data in a read-only directory.
 Any data files produced by your analysis,
@@ -311,8 +311,10 @@ so that the input data are never accidentally modified.
 ![A table](./images/table.svg) <!-- .element height="250px" class="margin100side" -->
 
 Script:
-We also want to make sure that the presentable output from our workflows,
-for example in plots and tables,
-is an important part of any analysis workflow.
+We also want to make sure that
+the presentable output from our workflows is reproducible.
+For example,
+plots and tables
+are an important part of any analysis workflow.
 Since this is a large topic in itself,
 we'll save that discussion for its own video.
