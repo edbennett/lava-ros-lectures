@@ -400,7 +400,7 @@ You can then “knit” the file together,
 which will result in a PDF, HTML, or similar document
 that shows the output of the code and the formatted discussion.
 This guarantees that the output of every code block will be in sync.
-Currently no journals in this space accept this kind of submission,
+Currently no journals in lattice accept this kind of submission,
 however,
 so it has limited utility.
 
