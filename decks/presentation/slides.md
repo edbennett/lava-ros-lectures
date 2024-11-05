@@ -217,7 +217,7 @@ $\downarrow$
 Script:
 While they're the most obvious,
 plots aren't the only things that benefit from automation.
-You might have preiously generated tables in LaTeX
+You might have previously generated tables in LaTeX
 by transcribing numbers by hand,
 or copying and pasting CSV into web-based LaTeX table generators.
 These are manual steps that can introduce errors&mdash;would
@@ -230,7 +230,7 @@ reflecting inconsistent underlying data.
 -
 
 ```python
-df.to_latex(tables/table1.tex)
+df.to_latex("tables/table1.tex")
 ```
 
 $\downarrow$
